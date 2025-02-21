@@ -40,7 +40,7 @@ pactl list short sinks
 pactl set-card-profile alsa_card.pci-0000_00_1f.3 output:analog-stereo
 ```
 
-## BỎ GÕ TIẾNG VIỆT
+## BỘ GÕ TIẾNG VIỆT
 
 ```bash
 sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo
