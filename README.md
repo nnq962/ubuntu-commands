@@ -1,4 +1,4 @@
-# Ubuntu Commands 🚀
+# Ubuntu Commands
 
 Made by nnq962
 
