@@ -72,7 +72,7 @@ sudo smbpasswd -e pc
 sudo nano /etc/samba/smb.conf
 ```
 
-📌 **Cấu hình trong **``:
+📌 **Cấu hình trong **`/etc/samba/smb.conf`:
 
 ```ini
 [pc]
