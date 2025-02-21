@@ -1,6 +1,6 @@
 # Ubuntu Commands 🚀
 
-📌 Danh sách các lệnh Ubuntu hữu ích. 💡 Bạn có thể copy nhanh các lệnh bằng cách nhấn vào nút 📋 trên GitHub.
+Made by nnq962
 
 ---
 
@@ -20,6 +20,17 @@ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/
 sudo dpkg -i cuda-keyring_1.1-1_all.deb
 sudo apt-get update
 sudo apt-get -y install cudnn
+```
+
+## ANACONDA
+
+```bash
+wget https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
+sudo bash ./Anaconda3-2024.10-1-Linux-x86_64.sh
+echo 'export PATH="/home/edulive/anaconda3/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+conda init
+source ~/.bashrc
 ```
 
 ## FIX STEREO
