@@ -27,7 +27,7 @@ sudo apt-get -y install cudnn
 ```bash
 wget https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
 sudo bash ./Anaconda3-2024.10-1-Linux-x86_64.sh
-echo 'export PATH="/home/edulive/anaconda3/bin:$PATH"' >> ~/.bashrc
+echo 'export PATH="/home/pc/anaconda3/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 conda init
 source ~/.bashrc
@@ -96,5 +96,26 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org
 sudo systemctl start mongod
 sudo systemctl status mongod
+sudo nano /etc/mongod.conf
+```
+
+## INSTALL DOCKER ENGINE ON UBUNTU
+
+```bash
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo docker run hello-world
 ```
 
